@@ -1,0 +1,8 @@
+version: '3'
+services:
+    web:
+        image: blurts-server
+        links:
+            - psql
+    psql:
+        image: postgres
