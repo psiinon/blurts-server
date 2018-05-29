@@ -16,6 +16,23 @@ for more background, objectives, key use cases.
 
 ## Development
 
+### Docker
+
+You may run the Breach Alerts service with [Docker](https://www.docker.com/).
+
+If you have Docker installed, you can:
+
+1. Build the container image:
+
+    `npm run docker:build`
+    
+2. Run the container:
+
+    `npm run docker:run`
+
+Otherwise, the instructions below explain how to Install and run Breach Alerts
+directly on your machine.
+
 ### Requirements
 
 * [Node](https://nodejs.org/) 9 (with npm)
