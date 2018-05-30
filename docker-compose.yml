@@ -2,7 +2,9 @@ version: '3'
 services:
     web:
         image: blurts-server
-        links:
-            - psql
-    psql:
+        ports:
+            - "6060:6060"
+        environment:
+            - DATABASE_URL="postgres://postgres@db:5432/postgres"
+    db:
         image: postgres
